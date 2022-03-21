@@ -28,7 +28,7 @@ import { mapState } from 'vuex'
 export default {
   data() {
     return {
-      userImg: require('../assets/images/user.png')
+      userImg: require('../assets/images/lorry.jpg')
     }
   },
   computed: {

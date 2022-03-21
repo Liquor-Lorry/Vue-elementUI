@@ -149,7 +149,7 @@ export default {
           params: this.searchForm
         })
         .then(res => {
-          console.log(res.data)
+          //console.log(res.data)
           this.userList = res.data.list
           this.config.total = res.data.count
           this.config.loading = false

@@ -63,7 +63,7 @@ export default {
   },
   data() {
     return {
-      userImg: require('../../assets/images/user.png'),
+      userImg: require('../../assets/images/lorry.jpg'),
       countData: [
         {
           name: '今日支付订单',

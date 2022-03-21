@@ -16,7 +16,7 @@
     <div class="login_box">
       <!-- 头像区域 -->
       <div class="avatar_box">
-        <img src="../../assets/images/user.png" alt="" />
+        <img src="../../assets/images/lorry.jpg" alt="" />
       </div>
       <!-- 登录表单区域 -->
       <el-form ref="loginFormRef" :model="form" label-width="0" class="login_form">

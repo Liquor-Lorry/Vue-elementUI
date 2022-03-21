@@ -15,41 +15,45 @@
   </div>
 </template>
 <script>
-import { mapState, mapMutations } from 'vuex'
+import { mapState, mapMutations } from "vuex";
 export default {
   data() {
     return {
-      dynamicTags: ['标签一', '标签二', '标签三'],
+      dynamicTags: ["标签一", "标签二", "标签三"],
       inputVisible: false,
-      inputValue: ''
-    }
+      inputValue: "",
+    };
   },
   computed: {
     ...mapState({
-      tabs: state => state.tab.tabList
-    })
+      tabs: (state) => state.tab.tabList,
+    }),
   },
   methods: {
     ...mapMutations({
-      close: 'closeTab'
+      close: "closeTab",
     }),
     handleClose(tag) {
-      this.close(tag)
+      this.close(tag);
     },
     changeMenu(item) {
       //路由跳转
-      this.$router.push({ name: item.name })
+      this.$router.push({ name: item.name });
       //通过commit提交
-      this.$store.commit('selectMenu', item)
-    }
-  }
-}
+      this.$store.commit("selectMenu", item);
+    },
+  },
+};
 </script>
 <style lang="scss" scoped>
 .CommonTab {
   padding: 20px;
   .el-tag {
-    margin-right: 15px;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin-right: 10px;
     cursor: pointer;
   }
 }
